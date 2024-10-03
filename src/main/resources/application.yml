@@ -2,4 +2,10 @@ spring:
   application:
     name: springsecurity-oauth2-login
 
-
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 831533266849-k9g0lmmj8eelcskloltlkgohlra3mor5.apps.googleusercontent.com
+            client-secret: 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
