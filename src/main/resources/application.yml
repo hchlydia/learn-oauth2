@@ -12,3 +12,6 @@ spring:
           github:
             client-id: Ov23lirrKo8limhc3sB8
             client-secret: b1003dc7bddc755fda4a39f62cbc28f8e0ed49b9
+          facebook:
+            client-id: 507701865462642
+            client-secret: 4a066471f798313e508790daad4736c5

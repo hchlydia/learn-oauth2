@@ -6,5 +6,5 @@
 ## GitHub
 - 要設定重新導向URI為: http://localhost:8080/login/oauth2/code/github
 ## Facebook
-
+- 應用程式網域: http://localhost:8080/login/oauth2/code/facebook
 ## Line
