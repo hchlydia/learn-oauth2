@@ -8,3 +8,7 @@
 ## Facebook
 - 應用程式網域: http://localhost:8080/login/oauth2/code/facebook
 ## Line
+- line login > callback url: http://localhost:8080/login/oauth2/code/line
+
+## 參考
+[資安一把罩！Spring Security 零基礎入門](https://hahow.in/courses/64d4acbf018e4b0acfaac3a3) by 古君葳
