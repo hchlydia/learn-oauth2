@@ -16,18 +16,19 @@ spring:
     oauth2:
       client:
         registration:
+          #相關key皆已刪除
           google:
             client-id: 831533266849-k9g0lmmj8eelcskloltlkgohlra3mor5.apps.googleusercontent.com
-            client-secret: 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
+            client-secret:
           github:
             client-id: Ov23lirrKo8limhc3sB8
-            client-secret: b1003dc7bddc755fda4a39f62cbc28f8e0ed49b9
+            client-secret:
           facebook:
             client-id: 507701865462642
-            client-secret: 4a066471f798313e508790daad4736c5
+            client-secret:
           line:
             client-id: 2006504409 #Channel ID
-            client-secret: 406e78d987d83e0f668402082acd3ea1 #Channel secret
+            client-secret: #Channel secret
             scope: profile+openid+email
             client-authentication-method: client_secret_basic
             authorization-grant-type: authorization_code
