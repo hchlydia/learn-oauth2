@@ -2,6 +2,16 @@ spring:
   application:
     name: springsecurity-oauth2-login
 
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myoauth2?serverTimezone=Asia/Taipei&characterEncoding=utf-8
+    username: root
+    password: XXX
+  jpa:
+    hibernate:
+      show_sql: true
+      format_sql: true
+
   security:
     oauth2:
       client:
