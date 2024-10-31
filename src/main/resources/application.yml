@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: springsecurity-oauth2-login
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myoauth2?serverTimezone=Asia/Taipei&characterEncoding=utf-8
+    username: root
+    password: XXX
+  jpa:
+    hibernate:
+      show_sql: true
+      format_sql: true
+
+  security:
+    oauth2:
+      client:
+        registration:
+          #相關key皆已刪除
+          google:
+            client-id: 831533266849-k9g0lmmj8eelcskloltlkgohlra3mor5.apps.googleusercontent.com
+            client-secret:
+          github:
+            client-id: Ov23lirrKo8limhc3sB8
+            client-secret:
+          facebook:
+            client-id: 507701865462642
+            client-secret:
+          line:
+            client-id: 2006504409 #Channel ID
+            client-secret: #Channel secret
+            scope: profile+openid+email
+            client-authentication-method: client_secret_basic
+            authorization-grant-type: authorization_code
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+            client-name: LINE
+            provider: line
+        provider:
+          line:
+            authorization-uri: https://access.line.me/oauth2/v2.1/authorize
+            token-uri: https://api.line.me/oauth2/v2.1/token
+            user-info-uri: https://api.line.me/v2/profile
+            user-name-attribute: userId
